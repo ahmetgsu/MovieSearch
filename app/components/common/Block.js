@@ -45,8 +45,7 @@ export const Block = ({
     bottom && styles.bottom,
     card && styles.card,
     space && {justifyContent: `space-${space}`},
-    color && styles[color], // predefined styles colors for backgroundColor
-    color && !styles[color] && {backgroundColor: color}, // custom backgroundColor
+    color && {backgroundColor: color}, // custom backgroundColor
     pt && getRelatedSpace('pt', pt),
     pr && getRelatedSpace('pr', pr),
     pb && getRelatedSpace('pb', pb),
